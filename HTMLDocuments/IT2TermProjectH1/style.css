@@ -1,0 +1,79 @@
+
+
+ .animationsGridDisplayTitle{
+  text-align:center;
+
+  color:white;
+  font-family:Roboto, Helvetica, sans-serif;
+}
+
+.animationsGridDisplay{
+  position:relative;
+
+  width:850px;
+  height:auto;
+
+  display:grid;
+  grid-template-columns:repeat(2, 400px);
+  grid-gap:10px;
+
+  justify-content:center;
+  align-items:center;
+  margin:0px auto;
+  padding-bottom:100px;
+
+  background:var(--c5);
+}
+
+.animationsGridDisplay a{
+  text-decoration:none;
+}
+
+.animationDisplayDiv{
+  position:relative;
+
+  width:400px;
+  height:400px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+
+  font-family:Roboto, Helvetica, sans-serif;
+  text-align:center;
+
+  background:var(--c5-light);
+
+}
+
+.animationDisplayDivImage{
+  position:relative;
+  top:0px;
+  left:0px;
+
+  width:100%;
+  height:100%;
+  margin-bottom:-120%;
+
+  filter:blur(5px);
+
+  background-size:100% 100% !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+}
+
+.animationDisplayDiv *{
+  color:white;
+
+  margin:0px 0px;
+}
+
+.animationDisplayDiv h3{
+  font-size:2em;
+
+}
+
+.animationDisplayDiv h4{
+  font-size:1.5em;
+  font-weight:20;
+}

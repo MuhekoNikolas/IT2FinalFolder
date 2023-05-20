@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+		<meta charset="utf-8" />
+		<title>Temperature visualisation</title> 
+		<link   rel = "stylesheet" type="text/css" href="./css/style.css" />
+		
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script> <!--For lagring av filer -->
+		<script src = "https://fulab.no/fulibs/fusionSDK.js" > </script> <!-- Python grensesnitt, tegnepakke osv -->
+		<script src = "https://fulab.no/skolemappe/faa-vgs/bibliotek/IT-2/teamtools.js" > </script>  <!--Eventuelt Fellesverktøy i faget --> 
+		<script src = "./js/main.js"> </script> 	<!-- Programmets egendefinert kode -->
+        <script src = "./js/variables.js"> </script> 
+        <script src = "./js/script.js"> </script> 
+	</head>
+	
+	<body>	
+		<center>
+		<h1 >Visualisation of the Tafjord monthly temperature recordings of 2021</h1>
+		<p style="color:azure;">
+		Data er gyldig per 24.10.2022 (CC BY 4.0), Meteorologisk institutt (MET)
+		</p>
+		<button 	id 	= "tegngrafMinMax"> Tegn Min og Max graf </button> 
+		<button 	id 	= "tegngrafGsnittMinMax"> Tegn Gjennomsnitt av Max og Min</button>  		
+		<button 	id 	= "tegnDifferansenMinMax"> Tegn Differansen av Min og Max </button> 
+        <br></br>
+        <button id="tegnMaxSoyle"> Tegn Max soylediagram</button>
+        <button id="tegnMinSoyle"> Tegn Min soylediagram</button>
+
+		<button 	id 	= "viskut"> Visk ut med <br> valgt bakgrunn</button> 
+		<input      id  = "bakgrunn" value="#1c1c1c" </input><br><br>
+		<canvas 	id 	= "canvas" width= "500px" height = "400px" > </canvas> <br>
+		<textarea 	id 	= "meldinger" cols = "52" rows = "5", disabled> </textarea> <!-- Python grensesnittet print skriver inn her -->
+		</center>
+    </body>
+	
+</html>

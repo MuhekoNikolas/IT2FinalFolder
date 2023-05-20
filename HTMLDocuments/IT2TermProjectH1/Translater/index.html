@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pio's Translater</title>
+    <link rel="stylesheet" href="../resources/css/main.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./script.js" defer></script>
+
+</head>
+
+<body onload="initialiseVariables()">
+    <div id="wrapper">
+        <div class="navBar">
+            <h1 class="pageTitle">Pio's Translater</h1>
+            <div class="navBarLinks" style="position:relative; float:right;">
+                <a href="../index.html">Home</a>
+                <a href="../Shop/index.html">Shop</a>
+                <a href="../multipong/index.html">Multipong</a>
+                <a href="../cuesser/index.html">Cuesser</a>
+            </div>
+        </div>
+
+        <div class="pageContent">
+            <div class="inputSection">
+                <h2>Translator</h2>
+                <div>
+                    <label for="norwegian">Norwegian: </label>
+                    <input name="norwegian" type="text" id="norwegianInput"  placeholder="Norwegian word">
+                </div>
+                <div>
+                    <label for="english">English: </label>
+                    <input name="english" type="text" id="englishInput"  placeholder="English word">
+                </div>
+            </div>
+
+            <div class="settingsSection">
+                <h2>Settings</h2>
+                <div class="settingLangButtonDiv">
+                    <button class="settingLangButton" onclick="changeTranslation('en-no')">English to Norwegian</button>
+                    <button class="settingLangButton" onclick="changeTranslation('no-en')">Norwegian to English</button>
+                </div>
+                <div class="addNewTranslationDiv" style="padding-bottom:100px;">
+                    <h2>Dictionary</h2>
+                    <div>
+                        <label for="addNewNorwegian">Norwegian: </label>
+                        <input name="addNewNorwegian" type="text" id="addNewTranslationNorwegianInput" placeholder="new Norwegian word">
+                    </div>
+                    <div>
+                        <label for="addNewEnglish">English: </label>
+                        <input name="addNewEnglish" type="text" id="addNewTranslationEnglishInput"  placeholder="new English word">
+                    </div>
+                    <button class="addNewTranslationButton" onclick="addNewTranslation()">Add</button>
+                    <button class="deletFullDictionaryButton" onclick="resetDictionary(newDict='')" style="position:relative; float:right; display:block; background:red; margin:10px;">Delete current Dictionary.</button>
+                    <p style="color:white;"> Upload your own dictionary</p>
+                    <input type="file" style="color:yellow; cursor:pointer;" accept=".csv" onchange="changeDictionaryToFile(this)"> 
+                    <p style="color:var(--linksColor); cursor:pointer; " onclick="resetDictionary(newDict=false)">Reset to default dictionary</p>
+                    <h2 style="text-align:center;">All words</h2>
+
+
+              
+                    <table class="translaterAllTranslationsTable">
+                        <tr>
+                            <th>Index</th>
+                            <th>Norwegian</th>
+                            <th>English</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+
+
+:root{
+    --c1:#216AF2;
+    --c2:#0C52D3;
+    --c3:#0A3FA3;
+    --c4:#072D73;
+    --c5:#051e4d;
+    --c5-light:#04193f;
+    --c6:#010713;
+    --c7:#4021F2;
+    --linksColor:#B2B5F5;
+}
+
+*::-webkit-scrollbar {
+    width: 0px;
+}
+
+button, div.productsContainer, .productsContainer div, .pageContent{
+    border:none;
+    border-radius:10px;
+    box-shadow: inset 3px 4px 10px var(--c5-light), 1px 3px 10px var(--c6);
+}
+
+#wrapper {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: var(--c5-light);
+}
+
+.navBar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    width: 70vw;
+    height: 70px;
+
+    display: block;
+    margin: 10px auto;
+    align-items: center;
+
+    border-radius: 10px;
+
+    z-index:1000;
+
+    background: var(--c3);
+}
+
+.pageTitle {
+    position: relative;
+    top: 7px;
+
+    color: white;
+    font-size: 1.5em;
+    font-family: Roboto, Helvetica, sans-serif;
+
+    margin-left: 100px;
+}
+
+.navBarLinks {
+    position: relative;
+    float: right;
+    top: -40px;
+
+    display: flex;
+    margin-right: 100px;
+}
+
+.navBarLinks a {
+    position: relative;
+
+    color: white;
+    font-size: 1.5em;
+    font-family: Roboto, Helvetica, sans-serif;
+    text-decoration: none;
+
+    display: flex;
+    margin-left: 30px;
+    margin-right: -10px;
+}
+
+.navBarLinks a:hover {
+    color: red;
+}
+
+.pageContent {
+    position: fixed;
+    left: 0px;
+    top: 100px;
+
+    width: 100vw;
+    height: calc(100vh - 70px);
+
+    overflow: hidden;
+    overflow-y: auto;
+
+    background: none;
+}

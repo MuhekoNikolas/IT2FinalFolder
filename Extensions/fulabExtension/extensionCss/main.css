@@ -1,0 +1,356 @@
+  
+
+:root{
+    --c1: #F2B705;
+    --c2: #D97904;
+    --c3: #4d6e02;
+    --c4: #2b3e01;
+    --c5: #344b02;
+    --c5-light: #233201;
+    --c6: #320501;
+    --c7: #151e01;
+    --darkWhite:#D6D5CB;
+    --darkWhite2:#a0d7de;
+    --darkWhite3:#c6e7eb;
+
+    --c1: #2e7a85;
+    --c2:#143439;
+    --c5: #21575f;
+
+    --darkWhite: #B4DFE5;
+}
+
+body {
+    background: var(--darkWhite) !important;
+    margin:0px !important;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, Helvetica, sans-serif !important;
+
+    overflow:hidden;
+    overflow-y:auto;
+}
+
+.page{
+    padding:30px !important;
+    border-radius:10px;
+}
+
+.hoved.meny{
+    margin:0px auto !important;
+}
+
+.meny > button[onclick^="location.href="]{
+    background: white !important;
+}
+
+*:not(#kodeeditor *, #fusion *, #editor *){
+    box-sizing: border-box;
+    font-size:14px;
+}
+
+select{
+    background:var(--darkWhite3);
+}
+
+.serverVSeditor{
+    position:relative;
+
+    width:auto;
+
+    min-width:70px;
+
+    margin:0px;
+
+    white-space:nowrap !important;
+    overflow: hidden !important;
+}
+
+.extensionNavBar {
+    position: fixed;
+    top:0px;
+    left:0px;
+
+    border: 1px solid #ccc;
+
+    margin-top:0px;
+    padding:0px;
+
+    width:100vw;
+    height:47px !important;
+
+    display:flex !important;
+    align-items:center !important;
+
+    overflow:auto;
+    white-space: nowrap;
+
+    z-index:300;
+
+    background-color: var(--c5);
+}
+
+.extensionNavBar *{
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+    padding: 2px 2px 2px 2px !important;
+    margin:2px !important;
+    transition: 0.1s;
+
+    width:fit-content !important;
+    max-width:auto !important;
+
+    padding:5px 2px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.extensionNavBar button, .extensionNavBar div {
+    background-color: inherit;
+
+    height: 30px !important;
+    font-size:1em !important;
+
+    display:flex;
+    align-items:center;
+
+    padding:0px 2.5px !important;
+
+    border-radius:10px;
+
+    color:white !important;
+}
+
+.extensionNavBar button:hover, .extensionNavBar div:hover{
+    background:var(--c2) !important;
+}
+
+.extensionNavBar img {
+    border: none;
+    outline: none;
+    height: 22px;
+    cursor: pointer;
+    padding: 2px 2px 2px 2px;
+    transition: 0.1s;
+    margin-top: 8px;
+}
+
+.extensionResourcePageIframe{
+    position:relative;
+    top:0px;
+    left:0px;
+
+    width:calc( 100vw - 250px );
+    height:90vh;
+
+    margin-bottom:10px;
+
+}
+
+.extensionResourceSideMenu{
+    padding-top:70px !important;
+}
+
+
+.extensionResourceSideMenuSectionParent{
+    position:relative;
+    margin-top:10px;
+}
+
+.extensionResourceSideMenuSectionTitle{
+    position:relative;
+
+    padding:0px;
+    margin:0px;
+    text-align:center;
+
+    color: var(--c7);
+    color:gray;
+}
+
+
+/* Style the tab content - iFrames*/
+.tabcontent {
+    display: none;
+    padding: 4px 1px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.logo{
+    color: green;
+    font-size:12px;
+    font-weight: bold;
+    background-color: olive;
+    padding: 0px 0px;
+}
+.btnIcon{
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+.btnIcon2{
+    height: 35px;
+    width: 35px;
+    padding: 0px;
+    margin: 1px;
+    font-size: 20px;
+}
+
+
+
+/* Create columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 10%;
+    padding: 10px;
+}
+.column2 {
+    float: left;
+    width: 90%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.navbutton{ 
+    background-color: #ddd;
+    margin: 1px;
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column1 {
+     width: 100%;
+    }
+    .column2 {
+     width: 100%;
+    }
+}
+
+.extensionLibrarySideMenu{
+    position:fixed;
+    top:0px;
+    left:0px;
+
+    width:200px;
+    height:calc(100vh);
+
+    padding-top:50px;
+
+    z-index:200;
+
+    overflow:hidden;
+    overflow-y:auto;
+
+    background:var(--darkWhite);
+}
+
+.extensionLibrarySideMenu::-webkit-scrollbar{
+    width:1px;
+}
+
+.extensionLibrarySideMenuOption, .extensionSchoolLibrarySideMenuOption{
+    position:relative;
+    top:0px;
+    left:0px;
+
+    width:fit-content;
+    height:30px;
+
+    margin:2px;
+    padding:5px;
+    margin-left:20px;
+
+    cursor:pointer;
+    color:white;
+
+    display:flex;
+    align-items:center;
+
+    border-radius:10px;
+
+    background:var(--c5);
+}
+
+.extensionLibrarySideMenuOption.extensionLibrarySideMenuOptionActive, .extensionSchoolLibrarySideMenuOptionActive{
+    box-shadow:inset 2px -3px var(--c5);
+    border:1px solid var(--c1);
+
+    background:var(--c2);
+}
+
+.extensionTopBarButtonActive{
+    box-shadow:inset 2px -3px var(--darkWhite2);
+    border:1px solid var(--darkWhite3);
+
+    background: var(--c1) !important;
+}
+
+.extensionPageMainWrapper{
+    position:absolute;
+    top:47px;
+    left:0px;
+
+    width: 100vw;
+
+    padding-top:20px !important;
+
+    overflow:hidden;
+    overflow-y:auto;
+}
+
+.grid-container, .grid-container > div{
+    background-color:var(--darkWhite) !important;
+}
+
+
+.FusionManualTable{
+    width:calc( 100% -10px );
+    height:calc( 100% -10px );
+
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.intro{
+    background-color:var(--c1) !important;
+}
+
+.row1{ 
+    background-color:var(--darkWhite3) !important;
+}
+
+.row2{ 
+    background-color:var(--darkWhite2) !important;
+}
+
+
+
+#SkolemappeFrameId{
+    position:relative;
+
+    width:900px;
+    height:600px;
+
+    display:block;
+    margin:0px auto;
+}
+
+.schoolLibrarySideMenuInfoDiv{
+    position:relative;
+
+    display:block;
+    margin:0px auto;
+
+    margin-top:70px;
+
+    width:90%;
+
+    white-space:wrap;
+}

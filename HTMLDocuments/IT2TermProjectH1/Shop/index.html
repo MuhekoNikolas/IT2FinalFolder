@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pio's Shop</title>
+    <link rel="stylesheet" href="../resources/css/main.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="classes.js" defer></script>
+    <script src="script.js" defer></script>
+
+</head>
+
+<body onload="initialiseVariables()">
+    <div class="navBar">
+        <h1 class="pageTitle">Pio's Shop</h1>
+        <div class="navBarLinks" style="position:relative; float:right;">
+            <a href="../index.html">Home</a>
+            <a href="../Translater/index.html">Translater</a>
+            <a href="../multipong/index.html">Multipong</a>
+            <a href="../cuesser/index.html">Cuesser</a>
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <div class="pageContent">
+            <div class="productsContainer">
+            </div>
+
+            <div class="checkOutSection">
+                <div class="orderConfirmationDiv">
+                    <h3>Your Cart: </h3>
+                    <p class="checkoutCartInfo">
+                    </p>
+                    <p class="checkoutCartInfoTotalCost">Total Cost: 0kr</p>
+                </div>
+
+                <button class="checkoutButton" onclick="Customer.checkout()">Checkout</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+
+
+
+
+
+
+
+
+
+
+h2{
+    color:white;
+    font-family:Roboto, Helvetica, sans-serif;
+}
+
+input, button{
+    box-shadow:inset 4px 5px 10px var(--c6), 4px 5px 10px var(--c5-light);
+}
+
+input[disabled]{
+    cursor:not-allowed;
+}
+
+button{
+    cursor:pointer;
+
+    width:auto;
+    height:40px;
+
+    color:white;
+    font-family:Roboto, Helvetica, sans-serif;
+
+    border:none;
+    border-radius:10px;
+
+    background:var(--c7);
+}
+
+input{
+    border:none;
+    border-radius:10px;
+
+    background:var(--c4);
+}
+
+input:focus{
+    background:var(--c7) !important;
+}
+
+.pageContent{
+    display:flex;
+    flex-direction:column;
+
+    background:none;
+}
+
+.inputSection{
+    position:relative;
+
+    width:auto;
+    height:auto;
+
+    max-width:700px;
+
+    display:block;
+    margin:0px auto;
+
+    background:none;
+}
+
+.inputSection h2{
+    font-size:2em;
+    text-align:center;
+}
+
+.inputSection div{
+    position:relative;
+
+    width:auto;
+
+    display:block;
+    margin:10px auto;
+
+}
+
+.inputSection div label{
+    color:white;
+    font-size:1.5em;
+    font-family:Roboto, Helvetica,sans-serif;
+}
+
+.inputSection div input{
+    position:relative;
+
+    color:white;
+    font-size:1.5em;
+
+    min-width:400px;
+    height:50px;
+}
+
+.settingsSection{
+    position:relative;
+
+    width:700px;
+
+    display:block;
+    margin:0px auto;
+
+}
+
+.settingsSection *{
+    margin:initial auto;
+}
+
+.settingLangButtonDiv{
+    position:relative;
+    width:auto;
+    height:auto;
+
+
+    display:flex;
+    gap:10px;
+    margin:0px auto;
+    justify-content:center;
+
+    background:none;
+}
+
+.settingLangButton{
+    position:relative;
+
+    width:auto;
+    height:40px;
+}
+
+.addNewTranslationDiv div label{
+    color:white;
+    font-size:1.2em;
+    font-family:Roboto, Helvetica,sans-serif;
+}
+
+
+.addNewTranslationDiv div input{
+    position:relative;
+
+    color:white;
+    font-size:1.2em;
+
+    min-width:300px;
+    height:40px;
+
+    margin:10px;
+
+}
+
+
+.translaterAllTranslationsTable{
+    width:auto;
+    
+    color:white;
+    font-family:Roboto, Helvetica, sans-serif;
+    text-align:Center;
+
+    padding:109px;
+
+    margin:0px auto;
+
+    border-collapse: collapse;
+
+    box-shadow:inset 3px 4px 10px var(--c5-light);
+
+    background:var(--c5);
+}
+
+.translaterAllTranslationsTable td, .translaterAllTranslationsTable th{
+    width:200px;
+
+    border-right:.1px solid var(--c3);
+    border-left:.1px solid var(--c3);
+}
+
+.translaterAllTranslationsTable tr th{
+    border:.5px solid var(--c3);
+    font-size:1.5em;
+}
+
+.translaterAllTranslationsTable tr:nth-child(even){
+    box-shadow:inset 3px 4px 10px var(--c5-light);
+    background:var(--c4);
+}

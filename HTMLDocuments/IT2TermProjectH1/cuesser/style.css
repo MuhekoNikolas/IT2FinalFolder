@@ -1,0 +1,102 @@
+body {
+    height: 100%;
+    width: 100%;
+    background:var(--c5);
+  
+}
+
+button{
+    cursor:pointer;
+}
+  
+#Container{
+    position:relative;
+    top:100px;
+
+    width:auto;
+    height:auto;
+
+    overflow:hidden;
+    overflow-y:scroll;
+
+    padding-bottom:100px;
+
+}
+
+#divsContainer{
+    position:relative;
+
+    width:auto;
+    height:auto;
+    background:var(--c5);
+
+    display:grid;
+    grid-template-columns:repeat(5,auto);
+    overflow:none;
+
+    top:50px;
+
+    display:grid;
+    align-items:center;
+    justify-content:center;
+
+
+}
+
+.choiceDivs{
+    width:29vw;
+    height:250px;
+
+    cursor:help;
+
+    background:linear-gradient(var(--c6),orange);  
+    /* background:url("https://thumbs.dreamstime.com/b/illustrating-red-pick-me-sign-against-white-background-177557716.jpg");
+
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    background-position:center center;   */
+
+    border-radius:10px;
+
+    margin-right:1vw;
+
+    box-shadow:inset -4px 5px 10px var(--c3), -4px 5px 10px var(--c6);
+
+    text-align:center;
+
+}
+
+.choiceText{
+
+    padding:10px;
+    font-size:80px;
+}
+
+#winningContainer{
+    width:100vw;
+    height:auto;
+    position:relative;
+    background:var(--c5);
+    text-align:center;
+}
+
+#WinOrLooseText{
+
+    font-size:60px;
+    color:white;
+}
+
+
+
+.controlButtons{
+    width:auto;
+    height:auto;
+    color:white;
+
+    background:none;
+    border:none;
+
+    font-size:50px;
+    position:relative;
+}
+

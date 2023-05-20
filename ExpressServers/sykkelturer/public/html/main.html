@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sykkeltur - Home</title>
+
+        <link rel="stylesheet" href="/js/leaflet/leaflet.css" />
+        <script src="/js/leaflet/leaflet.js"></script>
+
+        <link rel="stylesheet" href="/css/main.css">
+        <script src="/js/classes.js"></script>
+        <script src="/js/main.js" defer></script>
+        <script src="/js/p5.js"></script>
+        <script src="/js/diagram.js"></script>
+        <script src="https://kit.fontawesome.com/49ac55f315.js" crossorigin="anonymous"></script>
+
+        <script>
+        </script>
+    </head>
+
+    <body>
+
+
+        <div id="mainWrapper">
+            <div class="sideBar">
+                <p>Click <span style="color:orange; cursor:pointer;" onclick="userClickedToImportDataFile()">here to import the dataset</span> file.</p>
+            </div>
+
+            <div class="loadingScreen">
+                <h1><i class="fa-solid fa-spinner"></i></h1>
+                <p>Loading...</p>
+            </div>
+
+            <div class="mainSection">
+    
+                <div class="mapSection">
+                    <h4>This map displays the three most visited starting locations and the three least visited locations.</h4>
+                    <div id="Map" class="Map"></div>
+                </div>
+
+                <div class="daysOfWeekdiagramSection">
+                    <h4>This diagram shows the total number of tours that took place each day of the week.</h4>
+                </div>
+
+                <div class="topThreeMostVisiteddiagramSection">
+                    <h4>This diagram shows the three most visited starting locations.</h4>
+                </div>
+
+                <div class="leastThreeMostVisiteddiagramSection">
+                    <h4>This diagram shows the three least visited starting locations.</h4>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+
+</html>

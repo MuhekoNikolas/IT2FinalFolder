@@ -1,0 +1,50 @@
+body {
+	background-color: #302c2c;
+}
+
+*{
+    font-family:monospace;
+}
+h1,h2{
+	color: rgb(153, 111, 249);
+}
+button{
+    width:auto;
+    height:45px;
+
+    color:azure;
+    font-family:monospace;
+    font:bold;
+    font-weight:500;
+    font-size:.9em;
+
+    border:none;
+    border-radius:40px;
+
+    box-shadow:2px 4px 6px black, inset 2px 4px 6px white;
+    background:#aca8a8;
+}
+#canvas {
+    position:relative;
+    left:-200px;
+    right:0px;
+
+	background-color: white;
+	cursor: crosshair;
+	border: solid 2px orange;
+	border-radius: 5px;
+}
+#meldinger {
+    position:relative;
+    top:-400px;
+    right:-260px;
+
+    height:350px;
+
+    color:white;
+
+	border: solid 2px orange;
+	border-radius: 5px;
+
+    background:#aca8a8;
+}

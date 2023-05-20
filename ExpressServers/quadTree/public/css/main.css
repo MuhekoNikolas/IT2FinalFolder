@@ -1,0 +1,13 @@
+
+
+body{
+    background:#1c1c1c;
+}
+
+#defaultCanvas0{
+    position:fixed;
+    top:0px;
+    left:0px;
+
+    /* cursor:none; */
+}

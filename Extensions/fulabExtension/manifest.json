@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Fulab extension", 
+    "version": "1.0",
+    "description": "A personal extension that changes some fulab.no aspects.",
+    "permissions": ["activeTab", "unlimitedStorage"],
+    "content_scripts": [
+      {
+        "matches": ["*://fulab.no/*", "*://js-vale.netlify.app/*"],
+        "css": ["./extensionCss/main.css"],
+        "js": ["./scripts/classes.js", "./scripts/fulabFunctions.js", "./scripts/home.js", "./scripts/functions.js", "main.js"]
+      }
+    ]
+  }
